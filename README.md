@@ -18,6 +18,14 @@ git remote rename origin hotplate
 ```
 This will clone the repo to your machine and rename the remote repo to hotplate. Now when you want to get the most up-to-date of this repo, use `git pull hotplate master`.
 
+To add your own remote repo, do the following commands:
+```
+git add .
+git commit -m 'initial commit'
+git remote add origin https://github.com/{YOUR USER NAME}/{YOUR REPO NAME}.git
+git push -u origin master
+```
+
 To start the repo, run the following commands in your terminal:
 ```
 npm install
