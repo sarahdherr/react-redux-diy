@@ -1,3 +1,104 @@
 p {
-  color: goldenrod;
+  font-size: 1.2em;
+}
+
+a {
+  font-size: 1.5em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Bubbler One', sans-serif;
+  background-color: #D4F4DD;
+}
+
+.nav {
+  font-size: 1.7em;
+  background-color: #17BEBB;
+  color: white;
+
+  .tabs {
+    float: right;
+  }
+
+}
+
+.about-img {
+  margin-left: 6vw;
+  img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid 1px black;
+  }
+}
+
+.about-summary {
+  margin-left: 4vw;
+}
+
+.summary {
+  margin-top: 4vh;
+}
+
+.hobby-img {
+  img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+}
+
+.hobbies {
+  margin-top: 8vh;
+  text-align: center;
+}
+
+.experience {
+  margin-top: 8vh;
+  text-align: center;
+}
+
+.experience-img {
+  img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+}
+
+.exprience-summ {
+  text-align: left;
+}
+
+.experience-list {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.experience h4 {
+  margin-top: 3vh;
+  font-size: 1.5em;
+}
+.experience li {
+  font-size: 1.2em;
+}
+
+.sparkle {
+  margin-top: 5vh !important;
+}
+
+.download-resume {
+  display: inline;
+  text-align: center;
+  h3 {
+      margin-top: 8vh;
+  }
+}
+
+.download-btn {
+  text-align: center;
+  margin-bottom: 5vh;
 }
