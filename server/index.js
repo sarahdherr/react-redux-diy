@@ -10,6 +10,8 @@ const app = express()
 app.use(morgan('dev'))
    .use(express.static(path.join(__dirname, '../public')))
 
+   .set('port', (process.env.PORT || 3000))
+
    .use(bodyParser.json())
    .use(bodyParser.urlencoded({ extended: true }))
 
@@ -25,7 +27,7 @@ app.use(morgan('dev'))
      res.status(err.status || 500).send(err.message || 'Internal server error.')
    })
 
-   .listen(3000, function () {
+   .listen(app.get('port'), function () {
      console.log(chalk.dim.magenta('Knock, knock'))
      console.log(chalk.dim.cyan('Who\'s there?'))
      console.log(chalk.dim.magenta('Your server,'), chalk.magenta('listening on port 3000'))
