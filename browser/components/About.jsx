@@ -8,7 +8,7 @@ import DownloadResume from './About/DownloadResume'
 export default (props) =>
   <div>
     <Summary />
-    <div className='clearfix separating' />
+    <div className='clearfix' />
     <Hobbies />
     <div className='clearfix' />
     <Experience />

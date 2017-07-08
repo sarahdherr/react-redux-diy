@@ -1,5 +1,9 @@
+* {
+  color: #393D40;
+}
+
 p {
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 
 a {
@@ -12,18 +16,36 @@ a:hover {
 
 body {
   font-family: 'Bubbler One', sans-serif;
-  background-color: #D4F4DD;
+  background-color: #F1EDEA;
 }
 
 .nav {
-  font-size: 1.7em;
-  background-color: #17BEBB;
-  color: white;
+  font-size: 2.2em;
+  background-color: #636363;
+  // color: white !important;
 
   .tabs {
     float: right;
   }
 
+  * {
+    color: #70a0af;
+  }
+
+}
+
+.sparkles-title {
+  margin-top: 6vh !important;
+}
+
+.brand-name:hover {
+  background-color: #17BEBB;
+  border: 0px transparent;
+}
+
+.brand-name:active {
+  background-color: #17BEBB;
+  border: 0px transparent;
 }
 
 .about-img {
@@ -31,7 +53,7 @@ body {
   img {
     width: 100%;
     border-radius: 50%;
-    border: solid 1px black;
+    border: solid 3px #70A0AF;
   }
 }
 
@@ -41,31 +63,49 @@ body {
 
 .summary {
   margin-top: 4vh;
+  h3 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
 }
 
 .hobby-img {
   img {
     width: 100%;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid #70A0AF;
   }
 }
 
 .hobbies {
   margin-top: 8vh;
   text-align: center;
+  h2 {
+    font-size: 2.5em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
 }
 
 .experience {
   margin-top: 8vh;
   text-align: center;
+  h3 {
+    font-size: 2.5em;
+  }
 }
 
 .experience-img {
   img {
     width: 100%;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid #70A0AF;
   }
 }
 
@@ -80,10 +120,10 @@ body {
 
 .experience h4 {
   margin-top: 3vh;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .experience li {
-  font-size: 1.2em;
+  font-size: 1.7em;
 }
 
 .sparkle {
@@ -95,10 +135,35 @@ body {
   text-align: center;
   h3 {
       margin-top: 8vh;
+      font-size: 2.5em;
   }
+  a {
+    font-size: 2em !important;
+  }
+  button:hover {
+    background-color: #4c8799 !important;
+  }
+  button {
+    background-color: #70A0AF;
+    border-color: #F1EDEA;
+
+    * {
+      color: #393d40 !important;
+    }
+  }
+
 }
 
 .download-btn {
   text-align: center;
   margin-bottom: 5vh;
+  // background-color: #70A0AF;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact * {
+  text-align: center;
 }

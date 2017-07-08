@@ -3,7 +3,7 @@ import React from 'react'
 export default (props) =>
   <div className='summary'>
     <div className='col-sm-4 col-md-4 col-lg-4 about-img'>
-      <img src='https://s-media-cache-ak0.pinimg.com/736x/49/02/a7/4902a7df0341a82e359e1c55b874b3a2--kittens-adorable-the-history.jpg' />
+      <img src='/headshot.jpg' />
     </div>
     <div className='col-sm-4 col-md-6 col-lg-6 about-summary'>
       <h2><strong>ABOUT ME</strong></h2>

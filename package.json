@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node start.js",
     "start-dev": "webpack -w & nodemon start.js",
-    "build": "webpack"
+    "build": "webpack",
+    "build-watch": "webpack -w"
   },
   "author": "",
   "license": "ISC",

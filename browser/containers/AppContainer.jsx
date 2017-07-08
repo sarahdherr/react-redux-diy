@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+// import About from '../components/About'
 
 export default (props) => {
   return (
@@ -8,6 +9,7 @@ export default (props) => {
       {
         props.children
       }
+      {/* <About /> */}
     </div>
   )
 }
