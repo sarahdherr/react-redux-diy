@@ -5,12 +5,11 @@ import {Provider} from 'react-redux'
 import store from './store'
 
 import Test from './components/Test'
-import Kitten from './containers/KittenContainer'
+import KittenContainer from './containers/KittenContainer'
 import AppContainer from './containers/AppContainer'
 
-import {stockKitten, stockKittens} from './reducers/kittens'
-
 import kittens from './dummyCats'
+import {stockKitten, stockKittens} from './reducers/kittens'
 
 const loadKitten = (nextRouter) => {
   let randomKitten = kittens[ Math.floor(Math.random() * kittens.length) ]
@@ -24,7 +23,7 @@ export default function Root () {
       <Router history={browserHistory}>
         <Route path='/' component={AppContainer} >
           <Route path='/test' component={Test} />
-          <Route path='/kittens' component={Kitten} onEnter={loadKitten} />
+          <Route path='/kittens' component={KittenContainer} onEnter={loadKitten} />
         </Route>
       </Router>
     </Provider>

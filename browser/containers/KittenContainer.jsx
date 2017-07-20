@@ -11,7 +11,7 @@ const mapState = (state) => {
 
 const mapDispatch = (dispatch) => {
   return {
-    set: (kitten) => dispatch(stockKitten(kitten))
+    select: (kitten) => dispatch(stockKitten(kitten))
   }
 }
 

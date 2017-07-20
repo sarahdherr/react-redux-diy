@@ -1,4 +1,4 @@
-import axios from 'axios'
+// import axios from 'axios'
 
 // constants
 const SELECT_KITTEN = 'SELECT_KITTEN'

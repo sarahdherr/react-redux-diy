@@ -24,6 +24,6 @@ const kittens = [
     {name: 'Frankie', img: 'https://s-media-cache-ak0.pinimg.com/736x/89/e5/47/89e5475cfb55ac2b694e2f17eb0bf362--kitty-cats-cat-s.jpg'},
     {name: 'Kirby', img: 'https://s-media-cache-ak0.pinimg.com/736x/b2/21/4f/b2214f96d413b27c9ca94b3ff6e3ccf7--tuxedo-kitten-fields.jpg'},
     {name: 'Ernie', img: 'https://i.imgur.com/fe65rKSl.jpg'}
-  ]
+]
 
 export default kittens

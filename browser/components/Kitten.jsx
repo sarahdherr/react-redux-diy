@@ -15,7 +15,7 @@ export default (props) => {
         <h2>Kittens:</h2>
         <ul>
           {kittens.map((kitten, idx) =>
-            <li key={idx} onClick={() => props.set(kitten)}><p>{kitten.name}</p></li>
+            <li key={idx} onClick={() => props.select(kitten)}><p>{kitten.name}</p></li>
           )}
         </ul>
       </div>
