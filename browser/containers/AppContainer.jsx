@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-// import About from '../components/About'
+// import Kitten from '../components/Kitten'
 
 export default (props) => {
   return (
@@ -9,7 +9,6 @@ export default (props) => {
       {
         props.children
       }
-      {/* <About /> */}
     </div>
   )
 }

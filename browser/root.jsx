@@ -1,26 +1,29 @@
 import React from 'react'
-import {Router, Route, browserHistory, IndexRedirect} from 'react-router'
-import {Provider} from 'react-redux'
+import {Router, Route, browserHistory} from 'react-router'
+import Provider from './react-redux/Provider'
 
 import store from './store'
 
 import Test from './components/Test'
-// import Projects from './components/Projects'
-import Contact from './components/Contact'
-import About from './components/About'
-import Home from './components/Home'
+import Kitten from './containers/KittenContainer'
 import AppContainer from './containers/AppContainer'
+import {stockKitten, stockKittens} from './reducers/kittens'
+
+import kittens from './dummyCats'
+
+const loadKitten = (nextRouter) => {
+  let randomKitten = kittens[ Math.floor(Math.random() * kittens.length) ]
+  store.dispatch(stockKitten(randomKitten))
+  store.dispatch(stockKittens(kittens))
+}
 
 export default function Root () {
   return (
     <Provider store={store}>
       <Router history={browserHistory}>
-        <Route path='/' component={AppContainer}>
-        <Route path='/projects' component={Test} />
-        <Route path='/about' component={About} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/home' component={Home} />
-        <IndexRedirect to='/about' />
+        <Route path='/' component={AppContainer} >
+          <Route path='/test' component={Test} />
+          <Route path='/kittens' component={Kitten} onEnter={loadKitten} />
         </Route>
       </Router>
     </Provider>

@@ -1,25 +1,35 @@
 import axios from 'axios'
 
-function reducer (state = {}, action) {
+// constants
+const SELECT_KITTEN = 'SELECT_KITTEN'
+const STOCK_KITTENS = 'STOCK_KITTENS'
+
+const initialState = {
+  selected: {},
+  list: []
+}
+// reducer
+function reducer (state = initialState, action) {
+  const newState = Object.assign({}, state)
   switch (action.type) {
     case SELECT_KITTEN:
-      return action.kitten
+      newState.selected = action.kitten
+      break
+    case STOCK_KITTENS:
+      newState.list = action.kittens
+      break
   }
-  return state
+  return newState
 }
 
-const SELECT_KITTEN = 'SELECT_KITTEN'
 export const stockKitten = kitten => ({
   type: SELECT_KITTEN,
   kitten
 })
 
-export const fetchKitten = id =>
-  dispatch =>
-    axios.get(`/api/kittens/${id}`)
-      .then(response => {
-        dispatch(stockKitten(response.data))
-      })
-      .catch(err => console.error(err))
+export const stockKittens = kittens => ({
+  type: STOCK_KITTENS,
+  kittens
+})
 
 export default reducer
