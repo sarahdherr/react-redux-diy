@@ -16754,11 +16754,7 @@ var _Root2 = _interopRequireDefault(_Root);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import AppContainer from './containers/AppContainer'
-
 _reactDom2.default.render(_react2.default.createElement(_Root2.default, null), document.getElementById('app'));
-// import { Provider } from 'react-redux'
-// import store from './store'
 
 /***/ }),
 /* 166 */
