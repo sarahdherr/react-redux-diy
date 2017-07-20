@@ -7,6 +7,7 @@ import store from './store'
 import Test from './components/Test'
 import Kitten from './containers/KittenContainer'
 import AppContainer from './containers/AppContainer'
+
 import {stockKitten, stockKittens} from './reducers/kittens'
 
 import kittens from './dummyCats'
