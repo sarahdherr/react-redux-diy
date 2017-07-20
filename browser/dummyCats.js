@@ -1,4 +1,3 @@
-// const cats = {
 const kittens = [
     {name: 'Abu', img: 'https://s-media-cache-ak0.pinimg.com/736x/15/c9/cc/15c9ccad7e0b9e151ff1a3f68e6fb22b.jpg'},
     {name: 'Tiger', img: 'https://www.valleyvet.com/images/worming-your-kitten.png'},
@@ -26,6 +25,5 @@ const kittens = [
     {name: 'Kirby', img: 'https://s-media-cache-ak0.pinimg.com/736x/b2/21/4f/b2214f96d413b27c9ca94b3ff6e3ccf7--tuxedo-kitten-fields.jpg'},
     {name: 'Ernie', img: 'https://i.imgur.com/fe65rKSl.jpg'}
   ]
-// }
 
 export default kittens
