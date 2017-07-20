@@ -1,8 +1,6 @@
 import React from 'react'
 
 export default (props) => {
-  console.log('PROPS', props)
-  // const kitten = props.kitten || {}
   const kittens = props.kittens || []
   return (
     <div>

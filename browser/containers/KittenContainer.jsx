@@ -1,4 +1,4 @@
-import connect from '../react-redux/connect'
+import {connect} from 'react-redux'
 import Kitten from '../components/Kitten'
 import {stockKitten} from '../reducers/kittens'
 
@@ -14,5 +14,5 @@ const mapDispatch = (dispatch) => {
     set: (kitten) => dispatch(stockKitten(kitten))
   }
 }
-// console.log(connect(mapState, mapDispatch)(Kitten))
+
 export default connect(mapState, mapDispatch)(Kitten)
