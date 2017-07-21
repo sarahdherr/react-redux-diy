@@ -15110,13 +15110,9 @@ var Test = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        'h1',
         null,
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Dogs are slobbery and smell'
-        )
+        '\uD83D\uDC36 Dogs are slobbery and smell'
       );
     }
   }]);
