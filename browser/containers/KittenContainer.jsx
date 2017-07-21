@@ -1,4 +1,4 @@
-import {connect} from 'react-redux'
+import connect from '../react-redux/connect'
 import Kitten from '../components/Kitten'
 import {stockKitten} from '../reducers/kittens'
 

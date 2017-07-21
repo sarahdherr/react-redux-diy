@@ -1,6 +1,6 @@
 import React from 'react'
 import {Router, Route, browserHistory} from 'react-router'
-import {Provider} from 'react-redux'
+import Provider from './react-redux/Provider'
 
 import store from './store'
 
