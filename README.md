@@ -1,37 +1,23 @@
-# My boilermaker!
+# React-redux library DIY
 
-## Technologies used:
-- Sequelize
-- Express
-- React
-- React router
-- Redux
-- React-Redux
-- Sass
+I made this library to illustrate what react-redux is doing under the hood. It should be noted that this is not exactly how the react-redux library is made, but follows a similar set-up.
 
-## Make something:
-I would clone, not fork, this repo in case there are updates down the road.
-#### To clone this repo onto your local machine:
-```
-git clone https://github.com/sarahdherr/hotplate.git
-cd hotplate
-git remote rename origin hotplate
-```
-This will clone the repo to your machine and rename the remote repo to hotplate. Now when you want to get the most up-to-date of this repo, use `git pull hotplate master`.
+## Test out the library:
 
-#### To add your own remote repo, do the following commands:
+1. Clone this repo onto your local machine
 ```
-git add .
-git commit -m 'initial commit'
-git remote add origin https://github.com/{YOUR USER NAME}/{YOUR REPO NAME}.git
-git push -u origin master
+git clone https://github.com/sarahdherr/react-redux-diy.git
+cd react-redux-diy
 ```
-
-#### To start the repo, run the following commands in your terminal:
+2. Download needed dependencies
 ```
 npm install
+```
+3. Start the program
+```
 npm start
 ```
+4. Go to the browser (localhost:3000)
 
 ## Questions:
 If you have any questions or find bugs, please email me at sarahherr02@gmail.com
